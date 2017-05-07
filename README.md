@@ -37,10 +37,37 @@ Several simulations were created with varied voltage noise levels
 
 Built models are represented as 3D-surfaces were gained power is represented as function of two variables: time and applied resistance.
 
-## Model treatment
+# Model treatment
+Input data were treated in 3 different ways and compared with theoretical maximal energy yield.
+For each option differential (specific power prodiction power curve) and integral power (total produced power to some moment) curves were build.
+NNs were trained applying varied epochs amount (from 1 till 3) to train.
+
+
+## Disturb and Observe
+Disturb and observe method – standard approach
+
+
+## Following Neurel Network
+tries to follow the maximum
+At each step FNN calculates the optimal load at current time and sets calculated value as load for next step. Start point is randomly selected.
+
+
+## Predictive Neurel Network
+Predictive Neural Network (PNN) – tries to predict the maximum
+At each step PNN calculates the optimal load for next step, depending time. Start point is randomly selected.
+
 
 
 # Summary
+Techniques were compared on models with varied noise level and losses of energy were estimated by comparing with theoretical maximum. 
+NNs were trained applying varied epochs amount (from 1 till 3) to train. D&O observe method implementation involves varied size of load changes (steps) expressed as multiplier of minimum change.
+Tables represents total power losses in % for the whole operation lifetime:
+
+# Conclusions
+Neural Networks are shown to be more reliable approach to manage MMPT of MFC that cause higher energy recovery comparing with D&O. 
+Increasing of noise decrease accuracy of prediction but it is still higher, than D&O. 
+Comparing of FNN and PNN robustness to noise doesn’t show advantages between any of them.
+
 
 # Software used:
 OS: Windows 10 [x64]
