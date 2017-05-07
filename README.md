@@ -51,7 +51,7 @@ For each option differential (specific power prodiction power curve) and integra
 
 ## Disturb and Observe
 Principle of method is constant changing of applied load and measuring of changes in power production. 
-<img src="images/DO_diferential.png" alt="" class="inline"/>
+<img src="images/DO_differential.png" alt="" class="inline"/>
 <b>Fig. 3.</b> Differential power curve, reached with Disturbe and observe method
 <img src="images/DO_integral.png" alt="" class="inline"/>
 <b>Fig. 4.</b> Integral power curve, reached with Disturbe and observe method
@@ -59,14 +59,14 @@ Principle of method is constant changing of applied load and measuring of change
 
 ## Following Neurel Network
 This NN tries to follow the maximum power point. At each step FNN calculates the optimal load at current time and sets calculated value as load for next step. Start point is randomly selected. Compared different amount of training epochs.
-<img src="images/FNN_diferential.png" alt="" class="inline"/>
+<img src="images/FNN_differential.png" alt="" class="inline"/>
 <b>Fig. 5.</b> Differential power curve, reached with FNN
 <img src="images/FNN_integral.png" alt="" class="inline"/>
 <b>Fig. 6.</b> Integral power curve, reached with FNN
 
 ## Predictive Neurel Network
 This NN tries to predict the maximum. At each step PNN calculates the optimal load for next step, depending time. Start point is randomly selected. NNs were trained applying varied epochs nuber (from 1 till 3) to train.
-<img src="images/PNN_diferential.png" alt="" class="inline"/>
+<img src="images/PNN_differential.png" alt="" class="inline"/>
 <b>Fig. 7.</b> Differential power curve, reached with PNN
 <img src="images/PNN_integral.png" alt="" class="inline"/>
 <b>Fig. 8.</b> Integral power curve, reached with PNN
