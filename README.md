@@ -11,6 +11,8 @@ Microbial Fuel Cell is an Bio-Electro-Chemical device that utilize exo-electroge
 - Simultaneous removal of organics / pollutants
 
 <img src="images/MFC_Classic.png" alt="" class="inline"/>
+Fig. 1. Typical and generalized construction of microbial fuel cell
+
 
 # Problem Description
 Power generation by MFCs isn’t constant and depends on wide range of operating conditions. Maximum Power Point Tracking (MPPT) is general name of techniques used for finding and keeping conditions where MFC generates maximum of possible power. Most approaches suggest to vary the applied resistance and measure voltage drop and gained current.
@@ -37,16 +39,17 @@ Several simulations were created with varied voltage noise levels
 
 Built models are represented as 3D-surfaces were gained power is represented as function of two variables: time and applied resistance. Several models were built with varied added noise (to add some randomness).
 <img src="images/Power_generation.png" alt="" class="inline"/>
+Fig. 2. Power, harvested from MFC as function of time and applied resistance (load). 5 mV noise level applied with load varied from 1 to 2000 Ohms.
 
 
 # Model treatment
 Input data were treated in 3 different ways and compared with theoretical maximal energy yield.
-For each option differential (specific power prodiction power curve) and integral power (total produced power to some moment) curves were build.
+For each option differential (specific power prodiction power curve) and integral power (total produced power to some moment) curves were build. <br>
 NNs were trained applying varied epochs amount (from 1 till 3) to train.
 
 
 ## Disturb and Observe
-Disturb and observe method – standard approach
+Principle of method is constant changing of applied load and measuring of changes in power production. 
 
 
 ## Following Neurel Network
