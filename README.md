@@ -10,7 +10,7 @@ Microbial Fuel Cell is an Bio-Electro-Chemical device that utilize exo-electroge
 - Produce the electricity in external circuit
 - Simultaneous removal of organics / pollutants
 
-![alt text](https://github.com/Pererva/CS6890/blob/master/images/MFC_Classic.png)
+![promisechains](https://github.com/Pererva/CS6890/blob/master/images/MFC_Classic.png)
 
 # Problem Description
 Power generation by MFCs isn’t constant and depends on wide range of operating conditions. Maximum Power Point Tracking (MPPT) is general name of techniques used for finding and keeping conditions where MFC generates maximum of possible power. Most approaches suggest to vary the applied resistance and measure voltage drop and gained current.
@@ -36,7 +36,7 @@ Several simulations were created with varied voltage noise levels
 ## Modeled data
 
 Built models are represented as 3D-surfaces were gained power is represented as function of two variables: time and applied resistance. Several models were built with varied added noise (to add some randomness).
-![alt text](https://github.com/Pererva/CS6890/blob/master/images/Power_generation.png)
+![promisechains](https://github.com/Pererva/CS6890/blob/master/images/Power_generation.png)
 
 
 # Model treatment
