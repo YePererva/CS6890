@@ -1,4 +1,4 @@
-# AI Supported Maximum PoerPoint Tracking in Microbial Fuel Cell
+# AI Supported Maximum PowerPoint Tracking in Microbial Fuel Cell
 Final Project in CS6980: Advanced Intelligent System in Clean Energy
 Spring 2017
 
@@ -24,11 +24,11 @@ Microbial Fuel Cell is an Bio-Electro-Chemical device that utilize exo-electroge
 # Summary
 
 # Software used:
-OS: Windows 10 [x64]
-Language: Python 3.6.1
+OS: Windows 10 [x64] <p>
+Language: Python 3.6.1 <p>
 Packages used:
 - Matplotlib 2 - visualisation and plotting
 - Keras - neural network implementation (with TensorFlow and NumPy as dependencies)
 - Jupyter - for visualisation/programming in browser 
-If  you have problem with installing packages, find and binaries for Python in Windows at http://www.lfd.uci.edu/~gohlke/pythonlibs/
+If  you have problem with installing packages, find and binaries for Python in Windows at http://www.lfd.uci.edu/~gohlke/pythonlibs/ <p>
 Find instructions for packages installing via pip at https://packaging.python.org/installing/
