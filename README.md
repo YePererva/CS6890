@@ -4,6 +4,7 @@ Spring 2017
 
 # Abstract
 Project addresses challenge of extracting maximum power from microbial fuel cells (MFCs). AI-based approach, that involves use of Convolutional Neural Network (CNN), was developed and compared with standard technique called “Disturb & Observe” (D&O).
+Main purpose of project is to see if AI can be a tool to improve the MMPT.
 
 # Introduction
 Microbial Fuel Cell is an Bio-Electro-Chemical device that utilize exo-electrogenic abilities of certain bacteria strains in order to:
@@ -25,9 +26,7 @@ Input data were created as model of MFC operation with assumptions:
 - MFC works in batch mode
 - Voltage over time generation is proportional to microbial growth kinetics
 - Voltage drops as function of applied resistance is based on semi-saturation equilibrium (1/5 of maximal load)
-Model simulates data that can be collected with method of fixed resistors or digital potentiometer.
-
-Data was saved as csv-file and consisted of 4 fields:
+<br>Model simulates data that can be collected with method of fixed resistors or digital potentiometer.<br>Data was saved as csv-file and consisted of 4 fields:
 - Operation time
 - Applied resistance
 - Achieved voltage
@@ -39,8 +38,10 @@ Several simulations were created with varied voltage noise levels
 
 Built models are represented as 3D-surfaces were gained power is represented as function of two variables: time and applied resistance. Several models were built with varied added noise (to add some randomness).
 <img src="images/Power_generation.png" alt="" class="inline"/>
-<b>Fig. 1.</b> Power, harvested from MFC as function of time and applied resistance (load). 5 mV noise level applied with load varied from 1 to 1000 Ohms and step of 1 Ohm.
+<b>Fig. 2.</b> Power, harvested from MFC as function of time and applied resistance (load). 5 mV noise level applied with load varied from 1 to 500 Ohms and step of 1 Ohm.
 
+Extra observation:<br>
+Decreasing of load ranges increases the difference in D&O behaviour, but almost doen't change the harvested energy.
 
 # Model treatment
 Input data were treated in 3 different ways and compared with theoretical maximal energy yield.
@@ -51,24 +52,24 @@ For each option differential (specific power prodiction power curve) and integra
 ## Disturb and Observe
 Principle of method is constant changing of applied load and measuring of changes in power production. 
 <img src="images/DO_diferential.png" alt="" class="inline"/>
-<b>Fig. 1.</b> Differential power curve, reached with Disturbe and observe method
+<b>Fig. 3.</b> Differential power curve, reached with Disturbe and observe method
 <img src="images/DO_integral.png" alt="" class="inline"/>
-<b>Fig. 1.</b> Integral power curve, reached with Disturbe and observe method
+<b>Fig. 4.</b> Integral power curve, reached with Disturbe and observe method
 
 
 ## Following Neurel Network
 This NN tries to follow the maximum power point. At each step FNN calculates the optimal load at current time and sets calculated value as load for next step. Start point is randomly selected. Compared different amount of training epochs.
-<img src="images/DO_diferential.png" alt="" class="inline"/>
-<b>Fig. 1.</b> Differential power curve, reached with Disturbe and observe method
-<img src="images/DO_integral.png" alt="" class="inline"/>
-<b>Fig. 1.</b> Integral power curve, reached with Disturbe and observe method
+<img src="images/FNN_diferential.png" alt="" class="inline"/>
+<b>Fig. 5.</b> Differential power curve, reached with FNN
+<img src="images/FNN_integral.png" alt="" class="inline"/>
+<b>Fig. 6.</b> Integral power curve, reached with FNN
 
 ## Predictive Neurel Network
 This NN tries to predict the maximum. At each step PNN calculates the optimal load for next step, depending time. Start point is randomly selected. NNs were trained applying varied epochs nuber (from 1 till 3) to train.
-<img src="images/DO_diferential.png" alt="" class="inline"/>
-<b>Fig. 1.</b> Differential power curve, reached with Disturbe and observe method
-<img src="images/DO_integral.png" alt="" class="inline"/>
-<b>Fig. 1.</b> Integral power curve, reached with Disturbe and observe method
+<img src="images/PNN_diferential.png" alt="" class="inline"/>
+<b>Fig. 7.</b> Differential power curve, reached with PNN
+<img src="images/PNN_integral.png" alt="" class="inline"/>
+<b>Fig. 8.</b> Integral power curve, reached with PNN
 
 
 # Summary
