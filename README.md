@@ -40,8 +40,7 @@ Built models are represented as 3D-surfaces were gained power is represented as 
 <img src="images/Power_generation.png" alt="" class="inline"/>
 <b>Fig. 2.</b> Power, harvested from MFC as function of time and applied resistance (load). 5 mV noise level applied with load varied from 1 to 500 Ohms and step of 1 Ohm.
 
-Extra observation:<br>
-Decreasing of load ranges increases the difference in D&O behaviour, but almost doen't change the harvested energy.
+<i><b>Extra observation:</b></i> Decreasing of load ranges increases the difference in D&O behaviour.
 
 # Model treatment
 Input data were treated in 3 different ways and compared with theoretical maximal energy yield.
@@ -75,7 +74,7 @@ This NN tries to predict the maximum. At each step PNN calculates the optimal lo
 # Summary
 Techniques were compared on models with varied noise level and losses of energy were estimated by comparing with theoretical maximum. 
 NNs were trained applying varied epochs amount (from 1 till 3) to train. D&O observe method implementation involves varied size of load changes (steps) expressed as multiplier of minimum change.
-Tables represents total power losses in % for the whole operation lifetime:
+
 
 # Conclusions
 Neural Networks are shown to be more reliable approach to manage MMPT of MFC that cause higher energy recovery comparing to D&O.<br>
@@ -89,5 +88,7 @@ Packages used:
 - Matplotlib 2 - visualisation and plotting
 - Keras - neural network implementation (with TensorFlow and NumPy as dependencies)
 - Jupyter - for visualisation/programming in browser 
-<br>If  you have problem with installing packages, find and binaries for Python in Windows at http://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
+
+
+If  you have problem with installing packages, find and binaries for Python in Windows at http://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
 Find instructions for packages installing via pip at https://packaging.python.org/installing/ <br>
