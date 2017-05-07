@@ -10,7 +10,11 @@ Microbial Fuel Cell is an Bio-Electro-Chemical device that utilize exo-electroge
 - Produce the electricity in external circuit
 - Simultaneous removal of organics / pollutants
 
+<<<<<<< HEAD
 ![alt text](https://github.com/Pererva/CS6890/blob/master/images/MFC_Classic.png)
+=======
+![alt text](CS6890/images/MFC_Classic.png)
+>>>>>>> origin/master
 
 # Problem Description
 
