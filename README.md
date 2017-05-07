@@ -55,6 +55,11 @@ Principle of method is constant changing of applied load and measuring of change
 <img src="images/DO_integral.png" alt="" class="inline"/>
 <b>Fig. 4.</b> Integral power curve, reached with Disturbe and observe method
 
+Power losses:<br>
+- Step = 1: 43.59 %
+- Step = 2: 41.29 %
+- Step = 3: 41.7 %
+- Step = 4: 41.01 %
 
 ## Following Neurel Network
 This NN tries to follow the maximum power point. At each step FNN calculates the optimal load at current time and sets calculated value as load for next step. Start point is randomly selected. Compared different amount of training epochs.
@@ -63,6 +68,12 @@ This NN tries to follow the maximum power point. At each step FNN calculates the
 <img src="images/FNN_integral.png" alt="" class="inline"/>
 <b>Fig. 6.</b> Integral power curve, reached with FNN
 
+Power losses:<br>
+- Epochs = 1: 1.07 %
+- Epochs = 2: 1.09 %
+- Epochs = 3: 1.04 %
+
+
 ## Predictive Neurel Network
 This NN tries to predict the maximum. At each step PNN calculates the optimal load for next step, depending time. Start point is randomly selected. NNs were trained applying varied epochs nuber (from 1 till 3) to train.
 <img src="images/PNN_differential.png" alt="" class="inline"/>
@@ -70,25 +81,27 @@ This NN tries to predict the maximum. At each step PNN calculates the optimal lo
 <img src="images/PNN_integral.png" alt="" class="inline"/>
 <b>Fig. 8.</b> Integral power curve, reached with PNN
 
+Power losses:<br>
+- Epochs = 1: 1.15 %
+- Epochs = 2: 0.97 %
+- Epochs = 3: 1.09 %
 
-# Summary
+# Summaries & Conclusions
 Techniques were compared on models with varied noise level and losses of energy were estimated by comparing with theoretical maximum. 
 NNs were trained applying varied epochs amount (from 1 till 3) to train. D&O observe method implementation involves varied size of load changes (steps) expressed as multiplier of minimum change.
-
-
-# Conclusions
 Neural Networks are shown to be more reliable approach to manage MMPT of MFC that cause higher energy recovery comparing to D&O.<br>
-Increasing of noise decrease accuracy of prediction but it is still higher, than D&O. Comparing of FNN and PNN robustness to noise doesn’t show advantages between any of them.
+Efficiency of D&O depends on load range and prety robust to noise level.
+Increasing of noise decrease accuracy of prediction by NN but it is still higher, than D&O. Comparing of FNN and PNN robustness to noise doesn’t show advantages between any of them.
 
 
 # Software used:
 OS: Windows 10 [x64]<br>
-Language: Python 3.6.1<br>
+Language & Version: Python 3.6.1 [x64] <br>
 Packages used:
 - Matplotlib 2 - visualisation and plotting
-- Keras - neural network implementation (with TensorFlow and NumPy as dependencies)
-- Jupyter - for visualisation/programming in browser 
+- Keras 1.1.0 - neural network implementation (with TensorFlow and NumPy as dependencies)
+- Jupyter 5.0 - for visualisation/programming in browser 
 
 
-If  you have problem with installing packages, find and binaries for Python in Windows at http://www.lfd.uci.edu/~gohlke/pythonlibs/ <br>
-Find instructions for packages installing via pip at https://packaging.python.org/installing/ <br>
+If  you have problem installing packages, find and download binaries for Python under Windows at <a>http://www.lfd.uci.edu/~gohlke/pythonlibs/ </a><br>
+Find instructions for packages installing via pip at <a>https://packaging.python.org/installing/ </a> <br>
