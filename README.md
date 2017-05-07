@@ -35,7 +35,9 @@ Several simulations were created with varied voltage noise levels
 
 ## Modeled data
 
-Built models are represented as 3D-surfaces were gained power is represented as function of two variables: time and applied resistance.
+Built models are represented as 3D-surfaces were gained power is represented as function of two variables: time and applied resistance. Several models were built with varied added noise (to add some randomness).
+![alt text](https://github.com/Pererva/CS6890/blob/master/images/Power_generation.png)
+
 
 # Model treatment
 Input data were treated in 3 different ways and compared with theoretical maximal energy yield.
