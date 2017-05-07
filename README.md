@@ -10,6 +10,8 @@ Microbial Fuel Cell is an Bio-Electro-Chemical device that utilize exo-electroge
 - Produce the electricity in external circuit
 - Simultaneous removal of organics / pollutants
 
+[[https://github.com/Pererva/CS6890/blob/master/images/MFC_Classic.png|alt=octocat]]
+
 # Problem Description
 
 # Materials and methods
@@ -24,11 +26,11 @@ Microbial Fuel Cell is an Bio-Electro-Chemical device that utilize exo-electroge
 # Summary
 
 # Software used:
-OS: Windows 10 [x64] <p>
-Language: Python 3.6.1 <p>
+OS: Windows 10 [x64]
+Language: Python 3.6.1
 Packages used:
 - Matplotlib 2 - visualisation and plotting
 - Keras - neural network implementation (with TensorFlow and NumPy as dependencies)
 - Jupyter - for visualisation/programming in browser 
-If  you have problem with installing packages, find and binaries for Python in Windows at http://www.lfd.uci.edu/~gohlke/pythonlibs/ <p>
+If  you have problem with installing packages, find and binaries for Python in Windows at http://www.lfd.uci.edu/~gohlke/pythonlibs/
 Find instructions for packages installing via pip at https://packaging.python.org/installing/
